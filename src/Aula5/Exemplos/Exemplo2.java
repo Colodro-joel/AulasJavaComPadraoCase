@@ -1,20 +1,19 @@
-package Aula5;
+package Aula5.Exemplos;
 
 import java.util.Scanner;
 
-public class Exemplo1 {
+public class Exemplo2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int idade = 20;
+        int idade;
 
-        while (idade<18){
+        do{
             System.out.print("Digite sua idade");
             idade = scanner.nextInt();
-            System.out.println(idade);
+            System.out.print(idade);
+        }while (idade<18);
 
-        }
         System.out.println("Voce é maior de idade");
-        Scanner.close();
-     }
-
+        scanner.close();
+    }
 }

@@ -1,6 +1,6 @@
-package Aula4;
+package Aula4.Exercicios;
 
-public class Exemplo1 {
+public class Exercicio1 {
     public static void main(String[] args) {
 
             int idade = 18;

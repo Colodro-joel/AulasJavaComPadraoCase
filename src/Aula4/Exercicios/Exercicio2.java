@@ -1,6 +1,6 @@
-package Aula4;
+package Aula4.Exercicios;
 
-public class Exemplo2 {
+public class Exercicio2 {
     public static void main(String[] args) {
 
         float valorDaCompra = 80;
@@ -16,4 +16,4 @@ public class Exemplo2 {
         }
     }
 }
-}
+
