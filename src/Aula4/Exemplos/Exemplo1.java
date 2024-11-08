@@ -9,10 +9,11 @@ public class Exemplo1 {
 
          System.out.println("digite um numero inteiro");
          x = scanner.NextInt();
-         if (x >= 30); {
-            System.out.println("esse numero é maior ou igual que 30"); }
-         else {
-             System.out.println("esse numero é menor que 30");}
-        scanner.close();
+         if (x >= 30) {
+             System.out.println("esse numero é maior ou igual que 30");
+         } else {
+             System.out.println("esse numero é menor que 30");
+         }
+         scanner.close();
     }
 }
