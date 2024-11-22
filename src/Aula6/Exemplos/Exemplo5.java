@@ -4,9 +4,10 @@ public class Exemplo5 {
     public static void main(String[] args) {
         int[] numeros = {1,2,3,4,5};
 
-        for (int 1 = 0;)
-
-        for (int: 1 = 0; 1 < numeros.length); i++); {
+        for (int; 1 = 0;) {
+            for (int
+        }: 1 = 0;
+        1 < numeros.length); i++); {
             System.out.printl(numeros[1]);
         }
         String[] nomes = {"Joel","Juliana","Diego"};

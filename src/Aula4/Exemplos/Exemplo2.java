@@ -10,21 +10,17 @@ public class Exemplo2 {
 
 //      System.out.println("Qual farol está ligado?");
         cordoSemaforo = scanner.next();
-        if ((cordoSemaforo.equals("verde") || cordoSemaforo.equals("verde"))) ;
-        {{
+        if ((cordoSemaforo.equals("verde") || cordoSemaforo.equals("verde"))); {
             System.out.println("Siga");
-        }
-        elseif((cordoSemaforo.equals("vermelho") || cordoSemaforo.equals("vermelho")));
-        {
-            System.out.println("Pare");
-        }
-        elseif((cordoSemaforo.equals("amarelo") || cordoSemaforo.equals("amarelo")));
-        {
+        }elseif((cordoSemaforo.equals("vermelho") || cordoSemaforo.equals("vermelho"))); {
+            System.out.println("Pare!");
+        }elseif ((cordoSemaforo.equals("amarelo") || cordoSemaforo.equals("amarelo")); {
             System.out.println("Atenção");
-        } else {
+        }else {
             System.out.println(+cordoSemaforo + " não é cor do semaforo");
-        }}
+        }
 
     }
 }
+
 
