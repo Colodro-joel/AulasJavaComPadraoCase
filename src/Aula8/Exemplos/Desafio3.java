@@ -1,15 +1,18 @@
-package Aula7.Exercicios;
+package Aula8.Exemplos;
 
+import java.io.BufferedReader;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Desafio2 {
-    static Scanner scanner = new Scanner(System.in);
+public class Desafio3 {
+    static Scanner scanner = new Scanner (System.in);
     static String[] cabecalho = {"id", "nome", "telefone", "email"};
     static String[][] matrizCadastro = {{"", ""}};
-
     public static void main(String[] args) {
-        matrizCadastro[0] = cabecalho;
+        matrizCadastro = cabecalho;
 
         String menu = """
                 ________________________________________________
@@ -25,7 +28,6 @@ public class Desafio2 {
 
         int opcao;
         do {
-
             System.out.println(menu);
             opcao = scanner.nextInt();
             scanner.nextLine();
@@ -58,6 +60,7 @@ public class Desafio2 {
                     System.out.println("Opcão invalida!!!");
             }
         } while (opcao != 5);
+
     }
 
     public static void exibirUsuario() {
@@ -71,7 +74,6 @@ public class Desafio2 {
             tabela.append("\n"); //PARA PULAR PRA PROXIMA LINHAA
         }
         System.out.println(tabela);
-
 
     }
 
@@ -100,34 +102,60 @@ public class Desafio2 {
         matrizCadastro = novaMatriz;
     }
 
-    public static void atualizarUsuario();
-
+    public static void atualizarUsuario() {
         exibirUsuario();
 
         System.out.println("\n Digite o id do usuario para atualizar");
         int idEscolhido = scanner.nextInt();
         scanner.nextLine();
+        System.out.print("Atualize as informações a seguir: ");
 
-        System.out.println(cabecalho[0] + idEscolhido);
+        System.out.println(cabecalho[0] + " - " + idEscolhido);
         for (int coluna = 1; coluna < cabecalho.length; coluna++) {
-            System.out.println(cabecalho[coluna] + ": ");
+            System.out.println(cabecalho[coluna] + ":  ");
             matrizCadastro[idEscolhido][coluna] = scanner.nextLine();
         }
         exibirUsuario();
     }
 
-    public static void deletarUsuario()  {
-
-        System.out.println("\n Digite o id do usuario para atualizar");
+    public static void deletarUsuario() {
+        exibirUsuarios();
+        System.out.println("\nDigite o Id do usuário que deseja deletar o registro: ");
         int idEscolhido = scanner.nextInt();
         scanner.nextLine();
 
-        System.out.println(cabecalho[0] + idEscolhido);
-        for (int coluna = 1; coluna < cabecalho.length; coluna++) {
-            System.out.println(cabecalho[coluna] + ": ");
-            matrizCadastro[idEscolhido][coluna] = scanner.nextLine();
+        String[][] novaMatriz = new String[matrizCadastro.lenght - 1][cabeçalho.lenght];
+        novaMatriz[0] = cabecalho;
+        for (int linha = 1, idNovaMatriz = 1; linha < matrizCadastro.length; linha++) {
+            if (linha == idEscolhido) {
+                continue;
+
+            }
+            novaMatriz[idNovaMatriz] = Arrays.copyOf(matrizCadastro[linha], matrizCadastro[linha].length);
+            novaMatriz[idNovaMatriz][0] = String.valueOf(idNovaMatriz);
+            idNovaMatriz++;
         }
+        matrizCadastro = novaMatriz;
+        System.out.println("Usuário deletado com sucesso! :D");
+        exibirUsuario();
+        salvarDadosNoArquivo();
     }
+
+    public static void SalvarDadosDoArquivo(){
+
+
+    }
+
+    public static void CarregarDadosNoArquivo(){
+        if (!arquivoBancodeDados.exists()) {
+            try {
+                if (arquivoBancoDeDados.create);
+
+            }
+        }
+
+    }
+
 
 
 

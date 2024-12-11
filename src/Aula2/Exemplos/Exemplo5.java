@@ -21,7 +21,7 @@ public class Exemplo5 {
 
         varFloat = (float) varDouble;
         System.out.println("O numero que voce digitou é: "+varDouble);
-
+---
         System.out.println("O numero que voce digitou é: "+numero);
     }
 }
