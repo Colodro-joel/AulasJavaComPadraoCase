@@ -1,13 +1,12 @@
 package Aula8.Exemplos;
 
 import java.io.BufferedReader;
-import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Desafio3 {
+public class CadastroDeUsuario {
     static Scanner scanner = new Scanner (System.in);
     static String[] cabecalho = {"id", "nome", "telefone", "email"};
     static String[][] matrizCadastro = {{"", ""}};
@@ -142,21 +141,25 @@ public class Desafio3 {
     }
 
     public static void SalvarDadosDoArquivo(){
-
-
-    }
-
-    public static void CarregarDadosNoArquivo(){
-        if (!arquivoBancodeDados.exists()) {
-            try {
-                if (arquivoBancoDeDados.create);
-
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(""))){
+            for (String[]linha: matrizCadastro){
+                bufferedWriter.write( String.join(",",linha)+"\n");
             }
+        } catch (Exception e){
+            throw new RuntimeException();
+
         }
 
     }
 
+    public static void CarregarDadosNoArquivo(){
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(""))){
 
 
+        }catch (Exception e){
+            throw new RuntimeException();
 
+        }
+
+    }
 }
