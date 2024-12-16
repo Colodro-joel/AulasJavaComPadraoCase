@@ -7,7 +7,7 @@ public class Exercicio5 {
         int nota3 = 1;
 
         int total = nota1+nota2+nota3;
-        System.out.println("Soma total da nota final: " + total)
+        System.out.println("Soma total da nota final: " + total);
 
     }
 }
