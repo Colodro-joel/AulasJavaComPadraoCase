@@ -1,11 +1,15 @@
 package Aula4.Exercicios;
 
+import java.util.Scanner;
+
 public class Exercicio3 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner();
 
-        int codigoDeProduto = 4;
+        System.out.println("Digite o código do produto: ");
+        int codigodoproduto = scanner.nextInt();
 
-        switch (codigoDeProduto) {
+        switch (codigodoproduto) {
             case 1:
                 System.out.println("Eletronicos");
                 break;
@@ -18,7 +22,7 @@ public class Exercicio3 {
             default:{
                 System.out.println("Não existe categoria com esse código");
             }
-        }
+        } scanner.close();
     }
 }
 
