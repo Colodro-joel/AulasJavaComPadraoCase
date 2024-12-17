@@ -11,11 +11,11 @@ public class Exercicio4 {
         double comss;
 
         if (comss < 1000) {
-            comss == valordasvendas * 0,05;
+            comss = valordasvendas * 0,05;
         } else if (valordasvendas >= 1000 && valordasvendas <= 5000) {
-            comss == valordasvendas * 0,10;
+            comss = valordasvendas * 0,10;
         } else (valordasvendas > 5000) {
-            comss == valordasvendas * 0,15;
+            comss = valordasvendas * 0,15;
         }
         System.out.println("O valor das vendas calculado é: " + comss);
 

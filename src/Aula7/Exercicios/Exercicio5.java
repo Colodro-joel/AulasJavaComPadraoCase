@@ -6,10 +6,10 @@ public class Exercicio5 {
         double nota2 = 5.1;
         double nota3 = 7.7;
 
-        double media = calcmedia(nota, nota2, nota3);
+        double media = calcmedia(nota1, nota2, nota3);
         System.out.println("A média é: " + media);
 
-        public static double calcmedia(double nota1, double nota2, double nota3) {
+        public static double calcmedia ( double nota1, double nota2, double nota3){
             return (nota1 + nota2 + nota3) / 3;
         }
     }

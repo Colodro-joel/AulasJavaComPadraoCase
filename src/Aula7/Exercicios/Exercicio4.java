@@ -7,7 +7,7 @@ public class Exercicio4 {
         Scanner scanner = new Scanner();
         double celsius = Scanner.nextInt();
         double fahrenheit = convertcelsiustofahrenheit(celsius);
-        System.out.println(celsius + " graus Celsius equivalem a " +fahrenheit + "graus fahrenheit".);
+        System.out.println(celsius + " graus Celsius equivalem a " +fahrenheit + "graus fahrenheit");
 
     }
 

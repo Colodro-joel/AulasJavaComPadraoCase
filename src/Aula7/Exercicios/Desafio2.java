@@ -1,6 +1,5 @@
 package Aula7.Exercicios;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Desafio2 {

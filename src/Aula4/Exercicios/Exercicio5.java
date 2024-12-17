@@ -23,6 +23,6 @@ public class Exercicio5 {
         scanner.close();
     }
 }
-    }
 
-}
+
+
